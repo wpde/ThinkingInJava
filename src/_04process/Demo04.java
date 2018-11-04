@@ -1,7 +1,7 @@
 /**
  * 
  */
-package _04process.exercise;
+package _04process;
 
 /**
  * @author cofe

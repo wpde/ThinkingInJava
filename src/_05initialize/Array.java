@@ -1,4 +1,4 @@
-package _05initialize.exercise;
+package _05initialize;
 
 public class Array {
 

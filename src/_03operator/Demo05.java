@@ -1,4 +1,4 @@
-package _03operator.exercise;
+package _03operator;
 
 /**
  * @Author cofe

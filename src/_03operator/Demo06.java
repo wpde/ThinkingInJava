@@ -1,4 +1,4 @@
-package _03operator.exercise;
+package _03operator;
 
 
 public class Demo06 {
