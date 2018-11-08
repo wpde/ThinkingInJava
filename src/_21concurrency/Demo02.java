@@ -10,7 +10,7 @@ package _21concurrency;
 public class Demo02 {
 	public static void main(String[] args) {
 		for(int i=10;i<15;i++) {
-			new Thread(new Fibonacci(10)).start();
+			new Thread(new Fibonacci(i)).start();
 		}
 	}
 }
@@ -29,8 +29,13 @@ class Fibonacci implements Runnable{
 	}
 	@Override
 	public void run() {
-		int res=fib(num);
-		System.out.println("输入num:" +num +"得到结果："+res);
+		synchronized(Fibonacci.class) {
+			System.out.println("输入num: "+num);
+			for(int i=0;i<num;i++) {
+				System.out.print(fib(i)+ " ");
+			}
+			System.out.println();
+		}
 	}
 	
 }
